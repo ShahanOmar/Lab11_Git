@@ -21,9 +21,11 @@ def estimate_storage():\
         total_mb = total_bytes / (1024 * 1024)\
         \
         # Display results\
+                # Display results\
         print("\\n--- Estimation Results ---")\
         print(f"Total Size: \{total_bytes:,\} Bytes")\
         print(f"Total Size: \{total_mb:.2f\} MB")\
+        print(f"Total Size: \{(total_mb / 1024):.4f\} GB")  \
         \
     except ValueError:\
         print("Error: Please enter numbers only.")\
